@@ -2,6 +2,21 @@
 <html>
  <head>
   <title>Self Camera</title>
+  <style type="text/css">
+    #myVideo{
+      position: absolute;
+      -webkit-animation-duration:10s;
+      -webkit-animation-iteration-count:infinite;
+      -webkit-animation-timing-function:linear;
+      -webkit-animation-name:rectRotate;   
+      -webkit-filter: sepia(100%);  
+    }
+ 
+    @-webkit-keyframes rectRotate{
+      0%{-webkit-transform:rotate(0deg);}
+      99%,100%{-webkit-transform:rotate(360deg);}
+    }
+  </style>
  </head>
  <body>
    <video id="myVideo" width="400" height="300" autoplay="1" ></video>
